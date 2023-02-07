@@ -5,7 +5,8 @@ import numpy as np
 
 import tvm
 from tvm import relay, autotvm
-import tvm.contrib.graph_runtime as runtime
+# import tvm.contrib.runtime as runtime
+import tvm.contrib.graph_executor as runtime
 
 from utils import get_network, make_network_key, use_graph_tuner
 
@@ -31,7 +32,7 @@ def benchmark(network, batch_size, dtype, target, log_prefix, repeat):
         with history_best_context:
             with tvm.transform.PassContext(opt_level=3):
                 lib = relay.build(mod, target=target, params=params)
-        ctx = tvm.context(str(target), 0)
+        ctx = tvm.device(str(target), 0)
         module = runtime.GraphModule(lib["default"](ctx))
 
         # Feed input data
@@ -45,7 +46,7 @@ def benchmark(network, batch_size, dtype, target, log_prefix, repeat):
         with history_best_context:
             with tvm.transform.PassContext(opt_level=3):
                 lib = relay.build(mod, target=target, params=params)
-        ctx = tvm.context(str(target), 0)
+        ctx = tvm.device(str(target), 0)
         module = runtime.GraphModule(lib["default"](ctx))
 
         # Feed input data
