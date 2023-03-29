@@ -6,15 +6,25 @@ from tvm import relay, auto_scheduler
 
 from utils import get_network, make_network_key
 
+# network_to_n_trials = {
+#     # CPU
+#     ("resnet_50", 1, "float32", "llvm"): 22000,
+#     ("mobilenet_v2", 1, "float32", "llvm"): 16000,
+#     ("bert", 1, "float32", "llvm"): 12000,
+#     # GPU
+#     ("resnet_50", 1, "float32", "cuda"): 20000,
+#     ("mobilenet_v2", 1, "float32", "cuda"): 16000,
+#     ("bert", 1, "float32", "cuda"): 12000,
+# }
 network_to_n_trials = {
     # CPU
-    ("resnet_50", 1, "float32", "llvm"): 22000,
-    ("mobilenet_v2", 1, "float32", "llvm"): 16000,
-    ("bert", 1, "float32", "llvm"): 12000,
+    ("resnet_50", 1, "float32", "llvm"): 2200,
+    ("mobilenet_v2", 1, "float32", "llvm"): 1600,
+    ("bert", 1, "float32", "llvm"): 1200,
     # GPU
-    ("resnet_50", 1, "float32", "cuda"): 20000,
-    ("mobilenet_v2", 1, "float32", "cuda"): 16000,
-    ("bert", 1, "float32", "cuda"): 12000,
+    ("resnet_50", 1, "float32", "cuda"): 2000,
+    ("mobilenet_v2", 1, "float32", "cuda"): 1600,
+    ("bert", 1, "float32", "cuda"): 1000,
 }
 
 

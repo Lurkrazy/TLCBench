@@ -1,0 +1,44 @@
+
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            3.16 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            8.71 ms             (0.00 ms)
+-------------------------------------------------------------
+
+
+network_to_n_trials = {
+    # CPU
+    ("resnet_50", 1, "float32", "llvm"): 2200,
+    ("mobilenet_v2", 1, "float32", "llvm"): 1600,
+    ("bert", 1, "float32", "llvm"): 1200,
+    # GPU
+    ("resnet_50", 1, "float32", "cuda"): 2000,
+    ("mobilenet_v2", 1, "float32", "cuda"): 1600,
+    ("bert", 1, "float32", "cuda"): 1000,
+}
+
+chendi@zeus:~/git/TLCBench$ python3 benchmark_autoscheduler.py --network all --target "cuda -model=2080ti" --logdir /home/chendi/git/TLCBench/tmp_logs
+Benchmark resnet_50-B1-float32 ...
+[20:53:37] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[20:53:37] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/resnet_50-B1-float32.json
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark mobilenet_v2-B1-float32 ...
+[20:55:25] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark bert-B1-float32 ...
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/bert-B1-float32.json
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            3.16 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            8.71 ms             (0.00 ms)
+-------------------------------------------------------------

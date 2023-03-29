@@ -1,0 +1,1027 @@
+----------------------------------------------------------------------
+Time elapsed for training: 1.00 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                        vm_mod_fused_nn_conv2d |        0.023 |         113.12 |     48 |
+|    1 |                             vm_mod_fused_nn_conv2d_add_clip_3 |        0.016 |        2579.20 |     48 |
+|    2 |                                  vm_mod_fused_nn_conv2d_add_2 |        0.007 |        1014.94 |     48 |
+|    3 |                              vm_mod_fused_nn_conv2d_add_add_1 |        0.014 |         702.35 |     48 |
+|    4 |                            vm_mod_fused_nn_conv2d_add_clip_18 |        0.032 |        1250.04 |     48 |
+|    5 |                             vm_mod_fused_nn_conv2d_add_clip_7 |        0.008 |         300.82 |     48 |
+|    6 |                                vm_mod_fused_nn_conv2d_add_add |        0.011 |        1911.66 |     48 |
+|    7 |                            vm_mod_fused_nn_conv2d_add_clip_15 |        0.004 |         135.99 |     48 |
+|    8 |                             vm_mod_fused_nn_conv2d_add_clip_9 |        0.005 |         616.69 |     48 |
+|    9 |                                    vm_mod_fused_nn_conv2d_add |        0.010 |        1254.44 |     48 |
+|   10 |                            vm_mod_fused_nn_conv2d_add_clip_14 |        0.005 |         482.55 |     48 |
+|   11 |                                  vm_mod_fused_nn_conv2d_add_1 |        0.012 |        1236.09 |     48 |
+|   12 |                            vm_mod_fused_nn_conv2d_add_clip_11 |        0.009 |        1140.11 |     48 |
+|   13 |                             vm_mod_fused_nn_global_avg_pool2d |        0.006 |          -0.00 |     48 |
+|   14 |                             vm_mod_fused_nn_conv2d_add_clip_5 |        0.012 |        1933.02 |     48 |
+|   15 |                            vm_mod_fused_nn_conv2d_add_clip_17 |        0.003 |         288.07 |     48 |
+|   16 |                                  vm_mod_fused_nn_conv2d_add_4 |        0.013 |        1147.28 |     48 |
+|   17 |                              vm_mod_fused_nn_conv2d_add_add_3 |        0.020 |        1110.32 |     48 |
+|   18 |                             vm_mod_fused_nn_conv2d_add_clip_1 |        0.012 |        2216.65 |     48 |
+|   19 |                                  vm_mod_fused_nn_conv2d_add_3 |        0.006 |         743.26 |     48 |
+|   20 |                               vm_mod_fused_nn_conv2d_add_clip |        0.009 |        2507.25 |     48 |
+|   21 |                             vm_mod_fused_nn_conv2d_add_clip_6 |        0.009 |        1084.33 |     48 |
+|   22 |                                  vm_mod_fused_nn_conv2d_add_5 |        0.015 |         592.84 |     48 |
+|   23 |                              vm_mod_fused_nn_conv2d_add_add_2 |        0.012 |         795.06 |     48 |
+|   24 |                             vm_mod_fused_nn_conv2d_add_clip_2 |        0.010 |         855.20 |     48 |
+|   25 |                              vm_mod_fused_nn_conv2d_add_add_4 |        0.039 |         385.59 |     48 |
+|   26 |                            vm_mod_fused_nn_conv2d_add_clip_12 |        0.004 |         404.62 |     48 |
+|   27 |                             vm_mod_fused_nn_conv2d_add_clip_4 |        0.011 |         565.26 |     48 |
+|   28 |                                  vm_mod_fused_nn_conv2d_add_6 |        0.031 |         956.83 |     48 |
+|   29 |                             vm_mod_fused_nn_conv2d_add_clip_8 |            - |              - |      0 |
+|   30 |                            vm_mod_fused_nn_conv2d_add_clip_10 |            - |              - |      0 |
+|   31 |                            vm_mod_fused_nn_conv2d_add_clip_16 |            - |              - |      0 |
+|   32 |                            vm_mod_fused_nn_conv2d_add_clip_13 |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 1392    Used time : 2573 s      Next ID: 29
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 235 fail_ct: 1813   Time elapsed: 1.52
+GA Iter: 0      Max score: 0.9970       Min score: 0.6298       #Pop: 96        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0000       Min score: 0.9848       #Pop: 96        #M+: 1384       #M-: 0
+EvolutionarySearch              #s: 96  Time elapsed: 22.33
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 48 programs to measure:
+................................................
+************************************************Time elapsed for measurement: 63.67 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 1.12 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                        vm_mod_fused_nn_conv2d |        0.023 |         113.12 |     48 |
+|    1 |                             vm_mod_fused_nn_conv2d_add_clip_3 |        0.016 |        2579.20 |     48 |
+|    2 |                                  vm_mod_fused_nn_conv2d_add_2 |        0.007 |        1014.94 |     48 |
+|    3 |                              vm_mod_fused_nn_conv2d_add_add_1 |        0.014 |         702.35 |     48 |
+|    4 |                            vm_mod_fused_nn_conv2d_add_clip_18 |        0.032 |        1250.04 |     48 |
+|    5 |                             vm_mod_fused_nn_conv2d_add_clip_7 |        0.008 |         300.82 |     48 |
+|    6 |                                vm_mod_fused_nn_conv2d_add_add |        0.011 |        1911.66 |     48 |
+|    7 |                            vm_mod_fused_nn_conv2d_add_clip_15 |        0.004 |         135.99 |     48 |
+|    8 |                             vm_mod_fused_nn_conv2d_add_clip_9 |        0.005 |         616.69 |     48 |
+|    9 |                                    vm_mod_fused_nn_conv2d_add |        0.010 |        1254.44 |     48 |
+|   10 |                            vm_mod_fused_nn_conv2d_add_clip_14 |        0.005 |         482.55 |     48 |
+|   11 |                                  vm_mod_fused_nn_conv2d_add_1 |        0.012 |        1236.09 |     48 |
+|   12 |                            vm_mod_fused_nn_conv2d_add_clip_11 |        0.009 |        1140.11 |     48 |
+|   13 |                             vm_mod_fused_nn_global_avg_pool2d |        0.006 |          -0.00 |     48 |
+|   14 |                             vm_mod_fused_nn_conv2d_add_clip_5 |        0.012 |        1933.02 |     48 |
+|   15 |                            vm_mod_fused_nn_conv2d_add_clip_17 |        0.003 |         288.07 |     48 |
+|   16 |                                  vm_mod_fused_nn_conv2d_add_4 |        0.013 |        1147.28 |     48 |
+|   17 |                              vm_mod_fused_nn_conv2d_add_add_3 |        0.020 |        1110.32 |     48 |
+|   18 |                             vm_mod_fused_nn_conv2d_add_clip_1 |        0.012 |        2216.65 |     48 |
+|   19 |                                  vm_mod_fused_nn_conv2d_add_3 |        0.006 |         743.26 |     48 |
+|   20 |                               vm_mod_fused_nn_conv2d_add_clip |        0.009 |        2507.25 |     48 |
+|   21 |                             vm_mod_fused_nn_conv2d_add_clip_6 |        0.009 |        1084.33 |     48 |
+|   22 |                                  vm_mod_fused_nn_conv2d_add_5 |        0.015 |         592.84 |     48 |
+|   23 |                              vm_mod_fused_nn_conv2d_add_add_2 |        0.012 |         795.06 |     48 |
+|   24 |                             vm_mod_fused_nn_conv2d_add_clip_2 |        0.010 |         855.20 |     48 |
+|   25 |                              vm_mod_fused_nn_conv2d_add_add_4 |        0.039 |         385.59 |     48 |
+|   26 |                            vm_mod_fused_nn_conv2d_add_clip_12 |        0.004 |         404.62 |     48 |
+|   27 |                             vm_mod_fused_nn_conv2d_add_clip_4 |        0.011 |         565.26 |     48 |
+|   28 |                                  vm_mod_fused_nn_conv2d_add_6 |        0.031 |         956.83 |     48 |
+|   29 |                             vm_mod_fused_nn_conv2d_add_clip_8 |        0.007 |        1446.91 |     48 |
+|   30 |                            vm_mod_fused_nn_conv2d_add_clip_10 |            - |              - |      0 |
+|   31 |                            vm_mod_fused_nn_conv2d_add_clip_16 |            - |              - |      0 |
+|   32 |                            vm_mod_fused_nn_conv2d_add_clip_13 |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 1440    Used time : 2662 s      Next ID: 30
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 67  fail_ct: 1981   Time elapsed: 1.37
+GA Iter: 0      Max score: 0.9226       Min score: 0.0054       #Pop: 67        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0000       Min score: 0.9854       #Pop: 96        #M+: 1384       #M-: 0
+EvolutionarySearch              #s: 96  Time elapsed: 24.27
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 48 programs to measure:
+................................................
+************************************************Time elapsed for measurement: 73.23 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 1.02 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                        vm_mod_fused_nn_conv2d |        0.023 |         113.12 |     48 |
+|    1 |                             vm_mod_fused_nn_conv2d_add_clip_3 |        0.016 |        2579.20 |     48 |
+|    2 |                                  vm_mod_fused_nn_conv2d_add_2 |        0.007 |        1014.94 |     48 |
+|    3 |                              vm_mod_fused_nn_conv2d_add_add_1 |        0.014 |         702.35 |     48 |
+|    4 |                            vm_mod_fused_nn_conv2d_add_clip_18 |        0.032 |        1250.04 |     48 |
+|    5 |                             vm_mod_fused_nn_conv2d_add_clip_7 |        0.008 |         300.82 |     48 |
+|    6 |                                vm_mod_fused_nn_conv2d_add_add |        0.011 |        1911.66 |     48 |
+|    7 |                            vm_mod_fused_nn_conv2d_add_clip_15 |        0.004 |         135.99 |     48 |
+|    8 |                             vm_mod_fused_nn_conv2d_add_clip_9 |        0.005 |         616.69 |     48 |
+|    9 |                                    vm_mod_fused_nn_conv2d_add |        0.010 |        1254.44 |     48 |
+|   10 |                            vm_mod_fused_nn_conv2d_add_clip_14 |        0.005 |         482.55 |     48 |
+|   11 |                                  vm_mod_fused_nn_conv2d_add_1 |        0.012 |        1236.09 |     48 |
+|   12 |                            vm_mod_fused_nn_conv2d_add_clip_11 |        0.009 |        1140.11 |     48 |
+|   13 |                             vm_mod_fused_nn_global_avg_pool2d |        0.006 |          -0.00 |     48 |
+|   14 |                             vm_mod_fused_nn_conv2d_add_clip_5 |        0.012 |        1933.02 |     48 |
+|   15 |                            vm_mod_fused_nn_conv2d_add_clip_17 |        0.003 |         288.07 |     48 |
+|   16 |                                  vm_mod_fused_nn_conv2d_add_4 |        0.013 |        1147.28 |     48 |
+|   17 |                              vm_mod_fused_nn_conv2d_add_add_3 |        0.020 |        1110.32 |     48 |
+|   18 |                             vm_mod_fused_nn_conv2d_add_clip_1 |        0.012 |        2216.65 |     48 |
+|   19 |                                  vm_mod_fused_nn_conv2d_add_3 |        0.006 |         743.26 |     48 |
+|   20 |                               vm_mod_fused_nn_conv2d_add_clip |        0.009 |        2507.25 |     48 |
+|   21 |                             vm_mod_fused_nn_conv2d_add_clip_6 |        0.009 |        1084.33 |     48 |
+|   22 |                                  vm_mod_fused_nn_conv2d_add_5 |        0.015 |         592.84 |     48 |
+|   23 |                              vm_mod_fused_nn_conv2d_add_add_2 |        0.012 |         795.06 |     48 |
+|   24 |                             vm_mod_fused_nn_conv2d_add_clip_2 |        0.010 |         855.20 |     48 |
+|   25 |                              vm_mod_fused_nn_conv2d_add_add_4 |        0.039 |         385.59 |     48 |
+|   26 |                            vm_mod_fused_nn_conv2d_add_clip_12 |        0.004 |         404.62 |     48 |
+|   27 |                             vm_mod_fused_nn_conv2d_add_clip_4 |        0.011 |         565.26 |     48 |
+|   28 |                                  vm_mod_fused_nn_conv2d_add_6 |        0.031 |         956.83 |     48 |
+|   29 |                             vm_mod_fused_nn_conv2d_add_clip_8 |        0.007 |        1446.91 |     48 |
+|   30 |                            vm_mod_fused_nn_conv2d_add_clip_10 |        0.006 |         140.87 |     48 |
+|   31 |                            vm_mod_fused_nn_conv2d_add_clip_16 |            - |              - |      0 |
+|   32 |                            vm_mod_fused_nn_conv2d_add_clip_13 |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 1488    Used time : 2762 s      Next ID: 31
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 192 fail_ct: 1856   Time elapsed: 1.48
+GA Iter: 0      Max score: 0.9977       Min score: 0.4953       #Pop: 96        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9871       #Pop: 96        #M+: 1399       #M-: 0
+EvolutionarySearch              #s: 96  Time elapsed: 19.85
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 48 programs to measure:
+................................................T
+***********************************************Time elapsed for measurement: 66.43 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 1.10 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                        vm_mod_fused_nn_conv2d |        0.023 |         113.12 |     48 |
+|    1 |                             vm_mod_fused_nn_conv2d_add_clip_3 |        0.016 |        2579.20 |     48 |
+|    2 |                                  vm_mod_fused_nn_conv2d_add_2 |        0.007 |        1014.94 |     48 |
+|    3 |                              vm_mod_fused_nn_conv2d_add_add_1 |        0.014 |         702.35 |     48 |
+|    4 |                            vm_mod_fused_nn_conv2d_add_clip_18 |        0.032 |        1250.04 |     48 |
+|    5 |                             vm_mod_fused_nn_conv2d_add_clip_7 |        0.008 |         300.82 |     48 |
+|    6 |                                vm_mod_fused_nn_conv2d_add_add |        0.011 |        1911.66 |     48 |
+|    7 |                            vm_mod_fused_nn_conv2d_add_clip_15 |        0.004 |         135.99 |     48 |
+|    8 |                             vm_mod_fused_nn_conv2d_add_clip_9 |        0.005 |         616.69 |     48 |
+|    9 |                                    vm_mod_fused_nn_conv2d_add |        0.010 |        1254.44 |     48 |
+|   10 |                            vm_mod_fused_nn_conv2d_add_clip_14 |        0.005 |         482.55 |     48 |
+|   11 |                                  vm_mod_fused_nn_conv2d_add_1 |        0.012 |        1236.09 |     48 |
+|   12 |                            vm_mod_fused_nn_conv2d_add_clip_11 |        0.009 |        1140.11 |     48 |
+|   13 |                             vm_mod_fused_nn_global_avg_pool2d |        0.006 |          -0.00 |     48 |
+|   14 |                             vm_mod_fused_nn_conv2d_add_clip_5 |        0.012 |        1933.02 |     48 |
+|   15 |                            vm_mod_fused_nn_conv2d_add_clip_17 |        0.003 |         288.07 |     48 |
+|   16 |                                  vm_mod_fused_nn_conv2d_add_4 |        0.013 |        1147.28 |     48 |
+|   17 |                              vm_mod_fused_nn_conv2d_add_add_3 |        0.020 |        1110.32 |     48 |
+|   18 |                             vm_mod_fused_nn_conv2d_add_clip_1 |        0.012 |        2216.65 |     48 |
+|   19 |                                  vm_mod_fused_nn_conv2d_add_3 |        0.006 |         743.26 |     48 |
+|   20 |                               vm_mod_fused_nn_conv2d_add_clip |        0.009 |        2507.25 |     48 |
+|   21 |                             vm_mod_fused_nn_conv2d_add_clip_6 |        0.009 |        1084.33 |     48 |
+|   22 |                                  vm_mod_fused_nn_conv2d_add_5 |        0.015 |         592.84 |     48 |
+|   23 |                              vm_mod_fused_nn_conv2d_add_add_2 |        0.012 |         795.06 |     48 |
+|   24 |                             vm_mod_fused_nn_conv2d_add_clip_2 |        0.010 |         855.20 |     48 |
+|   25 |                              vm_mod_fused_nn_conv2d_add_add_4 |        0.039 |         385.59 |     48 |
+|   26 |                            vm_mod_fused_nn_conv2d_add_clip_12 |        0.004 |         404.62 |     48 |
+|   27 |                             vm_mod_fused_nn_conv2d_add_clip_4 |        0.011 |         565.26 |     48 |
+|   28 |                                  vm_mod_fused_nn_conv2d_add_6 |        0.031 |         956.83 |     48 |
+|   29 |                             vm_mod_fused_nn_conv2d_add_clip_8 |        0.007 |        1446.91 |     48 |
+|   30 |                            vm_mod_fused_nn_conv2d_add_clip_10 |        0.006 |         140.87 |     48 |
+|   31 |                            vm_mod_fused_nn_conv2d_add_clip_16 |        0.012 |        1286.45 |     48 |
+|   32 |                            vm_mod_fused_nn_conv2d_add_clip_13 |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 1536    Used time : 2851 s      Next ID: 32
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 195 fail_ct: 1853   Time elapsed: 1.48
+GA Iter: 0      Max score: 0.9933       Min score: 0.4593       #Pop: 96        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9869       #Pop: 96        #M+: 1390       #M-: 0
+EvolutionarySearch              #s: 96  Time elapsed: 22.25
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 48 programs to measure:
+................................................T
+***********************************************Time elapsed for measurement: 63.40 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 1.07 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                        vm_mod_fused_nn_conv2d |        0.023 |         113.12 |     48 |
+|    1 |                             vm_mod_fused_nn_conv2d_add_clip_3 |        0.016 |        2579.20 |     48 |
+|    2 |                                  vm_mod_fused_nn_conv2d_add_2 |        0.007 |        1014.94 |     48 |
+|    3 |                              vm_mod_fused_nn_conv2d_add_add_1 |        0.014 |         702.35 |     48 |
+|    4 |                            vm_mod_fused_nn_conv2d_add_clip_18 |        0.032 |        1250.04 |     48 |
+|    5 |                             vm_mod_fused_nn_conv2d_add_clip_7 |        0.008 |         300.82 |     48 |
+|    6 |                                vm_mod_fused_nn_conv2d_add_add |        0.011 |        1911.66 |     48 |
+|    7 |                            vm_mod_fused_nn_conv2d_add_clip_15 |        0.004 |         135.99 |     48 |
+|    8 |                             vm_mod_fused_nn_conv2d_add_clip_9 |        0.005 |         616.69 |     48 |
+|    9 |                                    vm_mod_fused_nn_conv2d_add |        0.010 |        1254.44 |     48 |
+|   10 |                            vm_mod_fused_nn_conv2d_add_clip_14 |        0.005 |         482.55 |     48 |
+|   11 |                                  vm_mod_fused_nn_conv2d_add_1 |        0.012 |        1236.09 |     48 |
+|   12 |                            vm_mod_fused_nn_conv2d_add_clip_11 |        0.009 |        1140.11 |     48 |
+|   13 |                             vm_mod_fused_nn_global_avg_pool2d |        0.006 |          -0.00 |     48 |
+|   14 |                             vm_mod_fused_nn_conv2d_add_clip_5 |        0.012 |        1933.02 |     48 |
+|   15 |                            vm_mod_fused_nn_conv2d_add_clip_17 |        0.003 |         288.07 |     48 |
+|   16 |                                  vm_mod_fused_nn_conv2d_add_4 |        0.013 |        1147.28 |     48 |
+|   17 |                              vm_mod_fused_nn_conv2d_add_add_3 |        0.020 |        1110.32 |     48 |
+|   18 |                             vm_mod_fused_nn_conv2d_add_clip_1 |        0.012 |        2216.65 |     48 |
+|   19 |                                  vm_mod_fused_nn_conv2d_add_3 |        0.006 |         743.26 |     48 |
+|   20 |                               vm_mod_fused_nn_conv2d_add_clip |        0.009 |        2507.25 |     48 |
+|   21 |                             vm_mod_fused_nn_conv2d_add_clip_6 |        0.009 |        1084.33 |     48 |
+|   22 |                                  vm_mod_fused_nn_conv2d_add_5 |        0.015 |         592.84 |     48 |
+|   23 |                              vm_mod_fused_nn_conv2d_add_add_2 |        0.012 |         795.06 |     48 |
+|   24 |                             vm_mod_fused_nn_conv2d_add_clip_2 |        0.010 |         855.20 |     48 |
+|   25 |                              vm_mod_fused_nn_conv2d_add_add_4 |        0.039 |         385.59 |     48 |
+|   26 |                            vm_mod_fused_nn_conv2d_add_clip_12 |        0.004 |         404.62 |     48 |
+|   27 |                             vm_mod_fused_nn_conv2d_add_clip_4 |        0.011 |         565.26 |     48 |
+|   28 |                                  vm_mod_fused_nn_conv2d_add_6 |        0.031 |         956.83 |     48 |
+|   29 |                             vm_mod_fused_nn_conv2d_add_clip_8 |        0.007 |        1446.91 |     48 |
+|   30 |                            vm_mod_fused_nn_conv2d_add_clip_10 |        0.006 |         140.87 |     48 |
+|   31 |                            vm_mod_fused_nn_conv2d_add_clip_16 |        0.012 |        1286.45 |     48 |
+|   32 |                            vm_mod_fused_nn_conv2d_add_clip_13 |        0.014 |        1575.33 |     48 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 0.636 ms       Trials: 1584    Used time : 2940 s      Next ID: 25
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 152 fail_ct: 1896   Time elapsed: 1.27
+GA Iter: 0      Max score: 0.9850       Min score: 0.3418       #Pop: 96        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9861       #Pop: 96        #M+: 1391       #M-: 0
+EvolutionarySearch              #s: 96  Time elapsed: 20.72
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 48 programs to measure:
+................................................
+************************************************Time elapsed for measurement: 62.59 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 1.19 s
+Tune bert-B1-float32 ...
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Get devices for measurement successfully!
+========== Task 0  (workload key: ["4b5e216f8244b4e8f7b6543c4a9087e5", [1536, 128], [1536, 128]]) ==========
+placeholder = PLACEHOLDER [1536, 128]
+T_softmax_maxelem(i0) max= placeholder[i0, k]
+T_softmax_delta(i0, i1) = (placeholder[i0, i1] - T_softmax_maxelem[i0])
+T_fast_exp(ax0, ax1) = max((tir.reinterpret(tir.shift_left(int32((tir.floor(((max(min(T_softmax_delta[ax0, ax1], 88.3763f), -88. ..(OMITTED).. oor(((max(min(T_softmax_delta[ax0, ax1], 88.3763f), -88.3763f)*1.4427f) + 0.5f))*0.693147f))) + 1f)), T_softmax_delta[ax0, ax1])
+T_softmax_expsum(i0) += T_fast_exp[i0, k]
+T_softmax_norm(i0, i1) = (T_fast_exp[i0, i1]/T_softmax_expsum[i0])
+
+========== Task 1  (workload key: ["5b1e704ad5950c6ef36e46f1856366cd", [1, 768], [768, 768], [1, 768], [1, 768]]) ==========
+placeholder = PLACEHOLDER [1, 768]
+placeholder = PLACEHOLDER [768, 768]
+T_matmul_NT(i, j) += (placeholder[i, k]*placeholder[j, k])
+placeholder = PLACEHOLDER [1, 768]
+T_add(ax0, ax1) = (T_matmul_NT[ax0, ax1] + placeholder[ax0, ax1])
+T_minimum(ax0, ax1) = min(T_add[ax0, ax1], 9f)
+T_maximum(ax0, ax1) = max(T_minimum[ax0, ax1], -9f)
+T_fast_tanh(ax0, ax1) = ((T_maximum[ax0, ax1]*(((T_maximum[ax0, ax1]*T_maximum[ax0, ax1])*(((T_maximum[ax0, ax1]*T_maximum[ax0,  ..(OMITTED).. *T_maximum[ax0, ax1])*(((T_maximum[ax0, ax1]*T_maximum[ax0, ax1])*1.19826e-06f) + 0.000118535f)) + 0.00226843f)) + 0.00489353f))
+
+========== Task 2  (workload key: ["3458e75493bb4bb042e539b5ff4818fb", [128, 768], [3072, 768], [1, 3072], [128, 3072]]) ==========
+placeholder = PLACEHOLDER [128, 768]
+placeholder = PLACEHOLDER [3072, 768]
+T_matmul_NT(i, j) += (placeholder[i, k]*placeholder[j, k])
+placeholder = PLACEHOLDER [1, 3072]
+T_add(ax0, ax1) = (T_matmul_NT[ax0, ax1] + placeholder[0, ax1])
+
+========== Task 3  (workload key: ["2dde9ffcbf97381c0f0307643e09dac5", [128, 1, 768], [128, 1, 1]]) ==========
+placeholder = PLACEHOLDER [128, 1, 768]
+placeholder_red(ax0, ax1, ax2) += placeholder[ax0, ax1, k2]
+T_divide(ax0, ax1, ax2) = (placeholder_red[ax0, ax1, ax2]/768f)
+
+========== Task 4  (workload key: ["3458e75493bb4bb042e539b5ff4818fb", [128, 768], [768, 768], [1, 768], [128, 768]]) ==========
+placeholder = PLACEHOLDER [128, 768]
+placeholder = PLACEHOLDER [768, 768]
+T_matmul_NT(i, j) += (placeholder[i, k]*placeholder[j, k])
+placeholder = PLACEHOLDER [1, 768]
+T_add(ax0, ax1) = (T_matmul_NT[ax0, ax1] + placeholder[0, ax1])
+
+========== Task 5  (workload key: ["3458e75493bb4bb042e539b5ff4818fb", [128, 768], [2304, 768], [1, 2304], [128, 2304]]) ==========
+placeholder = PLACEHOLDER [128, 768]
+placeholder = PLACEHOLDER [2304, 768]
+T_matmul_NT(i, j) += (placeholder[i, k]*placeholder[j, k])
+placeholder = PLACEHOLDER [1, 2304]
+T_add(ax0, ax1) = (T_matmul_NT[ax0, ax1] + placeholder[0, ax1])
+
+========== Task 6  (workload key: ["32a5ff201401d5600f77ced9f22defaa", [12, 128, 128], [12, 64, 128], [12, 128, 64]]) ==========
+placeholder = PLACEHOLDER [12, 128, 128]
+placeholder = PLACEHOLDER [12, 64, 128]
+T_batch_matmul_NT(b, i, j) += (placeholder[b, i, k]*placeholder[b, j, k])
+
+========== Task 7  (workload key: ["3458e75493bb4bb042e539b5ff4818fb", [128, 3072], [768, 3072], [1, 768], [128, 768]]) ==========
+placeholder = PLACEHOLDER [128, 3072]
+placeholder = PLACEHOLDER [768, 3072]
+T_matmul_NT(i, j) += (placeholder[i, k]*placeholder[j, k])
+placeholder = PLACEHOLDER [1, 768]
+T_add(ax0, ax1) = (T_matmul_NT[ax0, ax1] + placeholder[0, ax1])
+
+========== Task 8  (workload key: ["32a5ff201401d5600f77ced9f22defaa", [12, 128, 64], [12, 128, 64], [12, 128, 128]]) ==========
+placeholder = PLACEHOLDER [12, 128, 64]
+placeholder = PLACEHOLDER [12, 128, 64]
+T_batch_matmul_NT(b, i, j) += (placeholder[b, i, k]*placeholder[b, j, k])
+
+========== Task 9  (workload key: ["dde89265d3f1a59075cee648386eac1e", [128, 1, 768], [128, 1, 1], [128, 1, 1]]) ==========
+placeholder = PLACEHOLDER [128, 1, 768]
+placeholder = PLACEHOLDER [128, 1, 1]
+T_subtract(ax0, ax1, ax2) = (placeholder[ax0, ax1, ax2] - placeholder[ax0, ax1, 0])
+T_multiply(ax0, ax1, ax2) = (T_subtract[ax0, ax1, ax2]*T_subtract[ax0, ax1, ax2])
+T_multiply_red(ax0, ax1, ax2) += T_multiply[ax0, ax1, k2]
+T_divide(ax0, ax1, ax2) = (T_multiply_red[ax0, ax1, ax2]/768f)
+
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |            - |              - |      0 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |            - |              - |      0 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |            - |              - |      0 |
+|    3 |                                             vm_mod_fused_mean |            - |              - |      0 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |            - |              - |      0 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 0       Used time : 0 s Next ID: 0
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 4
+Sample Initial Population       #s: 100 fail_ct: 1948   Time elapsed: 4.22
+GA Iter: 0      Max score: 0.9999       Min score: 0.0123       #Pop: 100       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9828       #Pop: 128       #M+: 1402       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 15.58
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 92.11 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+/home/chendi/.local/lib/python3.8/site-packages/xgboost/training.py:17: UserWarning: Old style callback is deprecated.  See: https://xgboost.readthedocs.io/en/latest/python/callbacks.html
+  warnings.warn(f'Old style callback is deprecated.  See: {link}', UserWarning)
+Time elapsed for training: 0.27 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |            - |              - |      0 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |            - |              - |      0 |
+|    3 |                                             vm_mod_fused_mean |            - |              - |      0 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |            - |              - |      0 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 64      Used time : 112 s       Next ID: 1
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 56  fail_ct: 1992   Time elapsed: 1.36
+GA Iter: 0      Max score: 0.9770       Min score: 0.0038       #Pop: 56        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9997       Min score: 0.9753       #Pop: 128       #M+: 1383       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 23.05
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................terminate called after throwing an instance of 'tvm::runtime::InternalError'
+  what():  [23:34:16] /home/chendi/git/localtvm/src/runtime/cuda/cuda_module.cc:61: CUDAError: cuModuleUnload(module_[i]) failed with error: CUDA_ERROR_MISALIGNED_ADDRESS
+Stack trace:
+  0: tvm::runtime::CUDAModuleNode::~CUDAModuleNode()
+        at /home/chendi/git/localtvm/src/runtime/cuda/cuda_module.cc:61
+  1: tvm::runtime::SimpleObjAllocator::Handler<tvm::runtime::CUDAModuleNode>::Deleter_(tvm::runtime::Object*)
+        at /home/chendi/git/localtvm/include/tvm/runtime/memory.h:138
+  2: tvm::runtime::Object::DecRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:805
+  3: tvm::runtime::ObjectPtr<tvm::runtime::Object>::reset()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:451
+  4: tvm::runtime::ObjectPtr<tvm::runtime::Object>::~ObjectPtr()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:400
+  5: tvm::runtime::ObjectRef::~ObjectRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:511
+  6: tvm::runtime::Module::~Module()
+        at /home/chendi/git/localtvm/include/tvm/runtime/module.h:50
+  7: void std::_Destroy<tvm::runtime::Module>(tvm::runtime::Module*)
+        at /usr/include/c++/8/bits/stl_construct.h:98
+  8: void std::_Destroy_aux<false>::__destroy<tvm::runtime::Module*>(tvm::runtime::Module*, tvm::runtime::Module*)
+        at /usr/include/c++/8/bits/stl_construct.h:108
+  9: void std::_Destroy<tvm::runtime::Module*>(tvm::runtime::Module*, tvm::runtime::Module*)
+        at /usr/include/c++/8/bits/stl_construct.h:137
+  10: void std::_Destroy<tvm::runtime::Module*, tvm::runtime::Module>(tvm::runtime::Module*, tvm::runtime::Module*, std::allocator<tvm::runtime::Module>&)
+        at /usr/include/c++/8/bits/stl_construct.h:206
+  11: std::vector<tvm::runtime::Module, std::allocator<tvm::runtime::Module> >::~vector()
+        at /usr/include/c++/8/bits/stl_vector.h:567
+  12: tvm::runtime::ModuleNode::~ModuleNode()
+        at /home/chendi/git/localtvm/include/tvm/runtime/module.h:116
+  13: tvm::runtime::LibraryModuleNode::~LibraryModuleNode()
+        at /home/chendi/git/localtvm/src/runtime/library_module.cc:38
+  14: tvm::runtime::SimpleObjAllocator::Handler<tvm::runtime::LibraryModuleNode>::Deleter_(tvm::runtime::Object*)
+        at /home/chendi/git/localtvm/include/tvm/runtime/memory.h:138
+  15: tvm::runtime::Object::DecRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:805
+  16: tvm::runtime::ObjectPtr<tvm::runtime::Object>::reset()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:451
+  17: tvm::runtime::ObjectPtr<tvm::runtime::Object>::~ObjectPtr()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:400
+  18: ~<lambda>
+        at /home/chendi/git/localtvm/src/runtime/library_module.cc:75
+  19: ~PackedFuncSubObj
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:114
+  20: Deleter_
+        at /home/chendi/git/localtvm/include/tvm/runtime/memory.h:138
+  21: tvm::runtime::Object::DecRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:805
+  22: tvm::runtime::ObjectPtr<tvm::runtime::Object>::reset()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:451
+  23: tvm::runtime::ObjectPtr<tvm::runtime::Object>::~ObjectPtr()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:400
+  24: tvm::runtime::ObjectRef::~ObjectRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:511
+  25: tvm::runtime::PackedFunc::~PackedFunc()
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:138
+  26: ~<lambda>
+        at /home/chendi/git/localtvm/src/runtime/profiling.cc:862
+  27: ~PackedFuncSubObj
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:114
+  28: Deleter_
+        at /home/chendi/git/localtvm/include/tvm/runtime/memory.h:138
+  29: tvm::runtime::Object::DecRef()
+        at /home/chendi/git/localtvm/include/tvm/runtime/object.h:805
+  30: tvm::runtime::TVMRetValue::Clear()
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:1067
+  31: tvm::runtime::TVMRetValue::~TVMRetValue()
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:812
+  32: tvm::runtime::LocalSession::FreeHandle(void*, int)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_local_session.cc:134
+  33: tvm::runtime::RPCFreeHandle(tvm::runtime::RPCSession*, tvm::runtime::TVMArgs, tvm::runtime::TVMRetValue*)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:855
+  34: void tvm::runtime::RPCEndpoint::EventHandler::SysCallHandler<void (*)(tvm::runtime::RPCSession*, tvm::runtime::TVMArgs, tvm::runtime::TVMRetValue*)>(void (*)(tvm::runtime::RPCSession*, tvm::runtime::TVMArgs, tvm::runtime::TVMRetValue*))
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:576
+  35: tvm::runtime::RPCEndpoint::EventHandler::HandleSyscall(tvm::runtime::RPCCode)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:948
+  36: tvm::runtime::RPCEndpoint::EventHandler::HandleProcessPacket(std::function<void (tvm::runtime::TVMArgs)>)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:294
+  37: tvm::runtime::RPCEndpoint::EventHandler::HandleNextEvent(bool, bool, std::function<void (tvm::runtime::TVMArgs)>)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:135
+  38: tvm::runtime::RPCEndpoint::HandleUntilReturnEvent(bool, std::function<void (tvm::runtime::TVMArgs)>)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:644
+  39: tvm::runtime::RPCEndpoint::ServerLoop()
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_endpoint.cc:735
+  40: tvm::runtime::RPCServerLoop(int)
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_socket_impl.cc:120
+  41: operator()
+        at /home/chendi/git/localtvm/src/runtime/rpc/rpc_socket_impl.cc:140
+  42: Call
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:1213
+  43: tvm::runtime::PackedFuncObj::CallPacked(tvm::runtime::TVMArgs, tvm::runtime::TVMRetValue*) const
+        at /home/chendi/git/localtvm/include/tvm/runtime/packed_func.h:1217
+  44: TVMFuncCall
+        at /home/chendi/git/localtvm/src/runtime/c_runtime_api.cc:477
+
+
+
+************************E****************************************Time elapsed for measurement: 105.39 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.45 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |            - |              - |      0 |
+|    3 |                                             vm_mod_fused_mean |            - |              - |      0 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |            - |              - |      0 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 128     Used time : 243 s       Next ID: 2
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 77  fail_ct: 1971   Time elapsed: 1.08
+GA Iter: 0      Max score: 0.9963       Min score: 0.0036       #Pop: 77        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9996       Min score: 0.9794       #Pop: 128       #M+: 1388       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 9.83
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+..............................................................T.T.T
+*************************************************************Time elapsed for measurement: 87.60 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.28 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |            - |              - |      0 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |            - |              - |      0 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 192     Used time : 342 s       Next ID: 3
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 2
+Sample Iter: 5  #Pop: 10        #Target: 50     fail_ct: 10230  Time elapsed: 2.79
+#Target has been reduced to 25 due to too many failures or duplications
+Sample Iter: 10 #Pop: 10        #Target: 25     fail_ct: 20470  Time elapsed: 5.66
+#Target has been reduced to 12 due to too many failures or duplications
+Sample Iter: 15 #Pop: 10        #Target: 12     fail_ct: 30710  Time elapsed: 8.50
+#Target has been reduced to 6 due to too many failures or duplications
+Sample Initial Population       #s: 10  fail_ct: 32758  Time elapsed: 9.13
+GA Iter: 0      Max score: 0.9983       Min score: 0.1132       #Pop: 10        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9994       Min score: 0.9355       #Pop: 128       #M+: 1278       #M-: 696
+EvolutionarySearch              #s: 128 Time elapsed: 1.93
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 87.36 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.32 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |            - |              - |      0 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 256     Used time : 440 s       Next ID: 4
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 137 fail_ct: 1911   Time elapsed: 0.95
+GA Iter: 0      Max score: 0.9984       Min score: 0.0514       #Pop: 128       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9795       #Pop: 128       #M+: 1389       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.04
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................T
+***************************************************************Time elapsed for measurement: 105.71 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.43 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |            - |              - |      0 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 320     Used time : 558 s       Next ID: 5
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 99  fail_ct: 1949   Time elapsed: 1.44
+GA Iter: 0      Max score: 0.9667       Min score: 0.0181       #Pop: 99        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9993       Min score: 0.9816       #Pop: 128       #M+: 1378       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.16
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+.............................................................T.T.T.T
+************************************************************Time elapsed for measurement: 81.46 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.37 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |            - |              - |      0 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 384     Used time : 651 s       Next ID: 6
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 133 fail_ct: 1915   Time elapsed: 0.96
+GA Iter: 0      Max score: 0.9970       Min score: 0.0423       #Pop: 128       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9822       #Pop: 128       #M+: 1390       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 12.69
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................T
+***************************************************************Time elapsed for measurement: 109.10 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.46 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |            - |              - |      0 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 448     Used time : 775 s       Next ID: 7
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 107 fail_ct: 1941   Time elapsed: 0.93
+GA Iter: 0      Max score: 0.9988       Min score: 0.0204       #Pop: 107       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0000       Min score: 0.9774       #Pop: 128       #M+: 1402       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 9.87
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................T
+***************************************************************Time elapsed for measurement: 82.67 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.54 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |     64 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |            - |              - |      0 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 512     Used time : 869 s       Next ID: 8
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 1
+Sample Initial Population       #s: 167 fail_ct: 1881   Time elapsed: 1.02
+GA Iter: 0      Max score: 0.9700       Min score: 0.2429       #Pop: 128       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9999       Min score: 0.9782       #Pop: 128       #M+: 1387       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 13.00
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+..............................................................T..T
+**************************************************************Time elapsed for measurement: 103.81 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.48 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |     64 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |            - |              - |      0 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: - ms   Trials: 576     Used time : 987 s       Next ID: 9
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Generate Sketches               #s: 2
+Sample Iter: 5  #Pop: 10        #Target: 50     fail_ct: 10230  Time elapsed: 3.46
+#Target has been reduced to 25 due to too many failures or duplications
+Sample Iter: 10 #Pop: 10        #Target: 25     fail_ct: 20470  Time elapsed: 6.98
+#Target has been reduced to 12 due to too many failures or duplications
+Sample Iter: 15 #Pop: 10        #Target: 12     fail_ct: 30710  Time elapsed: 10.52
+#Target has been reduced to 6 due to too many failures or duplications
+Sample Initial Population       #s: 10  fail_ct: 32758  Time elapsed: 11.26
+GA Iter: 0      Max score: 0.9681       Min score: 0.0283       #Pop: 10        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9994       Min score: 0.9365       #Pop: 128       #M+: 1369       #M-: 192
+EvolutionarySearch              #s: 128 Time elapsed: 2.43
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 90.99 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.47 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |     64 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 9.142 ms       Trials: 640     Used time : 1092 s      Next ID: 7
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 110 fail_ct: 1938   Time elapsed: 0.93
+GA Iter: 0      Max score: 0.9838       Min score: 0.0024       #Pop: 110       #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0000       Min score: 0.9771       #Pop: 128       #M+: 1403       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.11
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+...............................................................T.T
+**************************************************************Time elapsed for measurement: 85.40 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.58 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.244 |        2478.00 |     64 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |    128 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 9.142 ms       Trials: 704     Used time : 1190 s      Next ID: 2
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 80  fail_ct: 1968   Time elapsed: 1.29
+GA Iter: 0      Max score: 0.9341       Min score: -0.0994      #Pop: 80        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0788       Min score: 0.9239       #Pop: 128       #M+: 1397       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.46
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 96.61 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.55 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.165 |        3664.00 |    128 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.146 |        3095.93 |     64 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |    128 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 8.195 ms       Trials: 768     Used time : 1299 s      Next ID: 5
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 83  fail_ct: 1965   Time elapsed: 1.45
+GA Iter: 0      Max score: 0.7729       Min score: -0.0788      #Pop: 83        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0313       Min score: 0.8004       #Pop: 128       #M+: 1392       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.95
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 100.37 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.69 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.165 |        3664.00 |    128 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.140 |        3243.44 |    128 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.247 |        2442.29 |    128 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 8.115 ms       Trials: 832     Used time : 1412 s      Next ID: 7
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 97  fail_ct: 1951   Time elapsed: 0.93
+GA Iter: 0      Max score: 0.6027       Min score: -0.1501      #Pop: 97        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 1.0762       Min score: 0.8442       #Pop: 128       #M+: 1384       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 10.75
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 104.19 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.71 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.165 |        3664.00 |    128 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.140 |        3243.44 |    128 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.226 |        2670.11 |    192 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 7.862 ms       Trials: 896     Used time : 1529 s      Next ID: 2
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 95  fail_ct: 1953   Time elapsed: 1.18
+GA Iter: 0      Max score: 0.7727       Min score: -0.0975      #Pop: 95        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9901       Min score: 0.8322       #Pop: 128       #M+: 1394       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 11.24
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 101.57 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.75 s
+----------------------------------------------------------------------
+------------------------------  [ Task Scheduler ]
+----------------------------------------------------------------------
+|  ID  |                       Task Description                        | Latency (ms) | Speed (GFLOPS) | Trials |
+-----------------------------------------------------------------------------------------------------------------
+|    0 |                                  vm_mod_fused_nn_fast_softmax |        0.006 |        2934.51 |     64 |
+|    1 |                           vm_mod_fused_nn_dense_add_fast_tanh |        0.014 |          85.68 |     64 |
+|    2 |                                   vm_mod_fused_nn_dense_add_2 |        0.139 |        4361.55 |    192 |
+|    3 |                                             vm_mod_fused_mean |        0.003 |          31.43 |     64 |
+|    4 |                                   vm_mod_fused_nn_dense_add_1 |        0.066 |        2291.56 |     64 |
+|    5 |                                     vm_mod_fused_nn_dense_add |        0.140 |        3243.44 |    128 |
+|    6 |                                vm_mod_fused_nn_batch_matmul_1 |        0.025 |        1007.26 |     64 |
+|    7 |                                   vm_mod_fused_nn_dense_add_3 |        0.226 |        2670.11 |    192 |
+|    8 |                                  vm_mod_fused_nn_batch_matmul |        0.013 |        1917.79 |     64 |
+|    9 |                                         vm_mod_fused_variance |        0.003 |          94.28 |     64 |
+-----------------------------------------------------------------------------------------------------------------
+Estimated total latency: 7.545 ms       Trials: 960     Used time : 1644 s      Next ID: 7
+----------------------------------------------------------------------
+------------------------------  [ Search ]
+----------------------------------------------------------------------
+Sample Initial Population       #s: 94  fail_ct: 1954   Time elapsed: 0.94
+GA Iter: 0      Max score: 0.5792       Min score: -0.1255      #Pop: 94        #M+: 0  #M-: 0
+GA Iter: 4      Max score: 0.9571       Min score: 0.8673       #Pop: 128       #M+: 1390       #M-: 0
+EvolutionarySearch              #s: 128 Time elapsed: 11.77
+----------------------------------------------------------------------
+------------------------------  [ Measure ]
+----------------------------------------------------------------------
+Get 64 programs to measure:
+................................................................
+****************************************************************Time elapsed for measurement: 107.08 s
+----------------------------------------------------------------------
+------------------------------  [ Train cost model ]
+----------------------------------------------------------------------
+Time elapsed for training: 0.89 s
