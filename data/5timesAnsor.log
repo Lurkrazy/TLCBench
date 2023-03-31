@@ -1,0 +1,97 @@
+[15:10:24] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[15:10:24] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[15:12:26] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark resnet_50-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/1/autoscheduler/2080ti/resnet_50-B1-float32.json
+Benchmark mobilenet_v2-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/1/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
+Benchmark bert-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/1/autoscheduler/2080ti/bert-B1-float32.json
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            2.97 ms             (0.00 ms)
+mobilenet_v2       1            0.68 ms             (0.00 ms)
+bert               1            8.04 ms             (0.00 ms)
+-------------------------------------------------------------
+[15:14:49] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[15:14:49] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+Benchmark resnet_50-B1-float32 ...
+Traceback (most recent call last):
+  File "benchmark_autoscheduler.py", line 100, in <module>
+    prof_res = benchmark(
+  File "benchmark_autoscheduler.py", line 18, in benchmark
+    assert os.path.exists(log_file), "The log file '%s' does not exist." % log_file
+AssertionError: The log file '/home/chendi/git/TLCBench/saved_logs/default-Ansor/2/autoscheduler/2080ti/resnet_50-B1-float32.json' does not exist.
+[15:14:52] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[15:14:52] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[15:16:43] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark resnet_50-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/3/autoscheduler/2080ti/resnet_50-B1-float32.json
+Benchmark mobilenet_v2-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/3/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
+Benchmark bert-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/3/autoscheduler/2080ti/bert-B1-float32.json
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            3.02 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            9.39 ms             (0.00 ms)
+-------------------------------------------------------------
+[15:19:09] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[15:19:09] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[15:21:15] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark resnet_50-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/4/autoscheduler/2080ti/resnet_50-B1-float32.json
+Benchmark mobilenet_v2-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/4/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
+Benchmark bert-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/4/autoscheduler/2080ti/bert-B1-float32.json
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            2.73 ms             (0.00 ms)
+mobilenet_v2       1            0.66 ms             (0.00 ms)
+bert               1            8.17 ms             (0.00 ms)
+-------------------------------------------------------------
+[15:23:56] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[15:23:56] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[15:25:52] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+/home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
+  warnings.warn(
+Benchmark resnet_50-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/5/autoscheduler/2080ti/resnet_50-B1-float32.json
+Benchmark mobilenet_v2-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/5/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
+Benchmark bert-B1-float32 ...
+Use log file /home/chendi/git/TLCBench/saved_logs/default-Ansor/5/autoscheduler/2080ti/bert-B1-float32.json
+-------------------------------------------------------------
+Network Name       Batch size   Mean Inference Time (std dev)
+-------------------------------------------------------------
+resnet_50          1            3.06 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            8.44 ms             (0.00 ms)
+-------------------------------------------------------------

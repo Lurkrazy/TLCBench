@@ -87,20 +87,20 @@ bert               1            8.10 ms             (0.00 ms)
 -------------------------------------------------------------
 Network Name       Batch size   Mean Inference Time (std dev)
 -------------------------------------------------------------
-resnet_50          1            2.99 ms             (0.00 ms)
-mobilenet_v2       1            0.66 ms             (0.00 ms)
-bert               1            9.23 ms             (0.00 ms)
+resnet_50          1            2.81 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            9.48 ms             (0.00 ms)
 -------------------------------------------------------------
 
 chendi@zeus:~/git/TLCBench$ python3 benchmark_autoscheduler.py --network all --target "cuda -model=2080ti" --logdir /home/chendi/git/TLCBench/tmp_logs
 Benchmark resnet_50-B1-float32 ...
-[20:17:07] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
-[20:17:07] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[11:14:28] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.max_pool2d
+[11:14:28] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
 Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/resnet_50-B1-float32.json
 /home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
   warnings.warn(
 Benchmark mobilenet_v2-B1-float32 ...
-[20:19:09] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
+[11:16:14] /home/chendi/git/localtvm/src/relay/transforms/convert_layout.cc:99: Warning: Desired layout(s) not specified for op: nn.global_avg_pool2d
 Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/mobilenet_v2-B1-float32.json
 /home/chendi/git/localtvm/python/tvm/driver/build_module.py:267: UserWarning: target_host parameter is going to be deprecated. Please pass in tvm.target.Target(target, host=target_host) instead.
   warnings.warn(
@@ -111,7 +111,10 @@ Use log file /home/chendi/git/TLCBench/tmp_logs/autoscheduler/2080ti/bert-B1-flo
 -------------------------------------------------------------
 Network Name       Batch size   Mean Inference Time (std dev)
 -------------------------------------------------------------
-resnet_50          1            2.99 ms             (0.00 ms)
-mobilenet_v2       1            0.66 ms             (0.00 ms)
-bert               1            9.23 ms             (0.00 ms)
+resnet_50          1            2.81 ms             (0.00 ms)
+mobilenet_v2       1            0.67 ms             (0.00 ms)
+bert               1            9.48 ms             (0.00 ms)
 -------------------------------------------------------------
+
+#### 2080ti local-pop threshold 0.8
+
