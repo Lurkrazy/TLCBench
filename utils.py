@@ -74,6 +74,19 @@ def get_network(name, batch_size, dtype, layout):
         mod = tvm.relay.transform.FoldConstant()(mod)
         mod = tvm.relay.transform.CombineParallelBatchMatmul()(mod)
         mod = tvm.relay.transform.FoldConstant()(mod)
+    elif "vgg" in name:
+        import mxnet
+
+        # n_layer = int(name.split("_")[1])
+        n_layer = 16
+        block = mxnet.gluon.model_zoo.vision.get_vgg(n_layer, pretrained=True)
+        mod, params = relay.frontend.from_mxnet(
+            block, shape={"data": input_shape}, dtype=dtype
+        )
+        if layout == "NHWC":
+            mod = convert_to_nhwc(mod)
+        else:
+            assert layout == "NCHW"
     else:
         raise ValueError("Unsupported network: " + name)
 
