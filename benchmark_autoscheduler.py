@@ -10,7 +10,7 @@ import tvm.contrib.graph_executor as runtime
 from utils import get_network, make_network_key
 
 def benchmark(network, batch_size, dtype, target, log_file, repeat):
-    layout = "NHWC"
+    layout = "NCHW"
     mod, params, input_name, input_shape, output_shape = get_network(
         network, batch_size, dtype, layout
     )
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--network",
         type=str,
-        choices=["resnet_50", "mobilenet_v2", "bert", "all"],
+        choices=["resnet_50", "mobilenet_v2", "bert", "vgg", "all"],
         default="all",
         help="The name of the neural network.",
     )
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.network == "all":
-        networks = ["resnet_50", "mobilenet_v2", "bert"]
+        networks = ["resnet_50", "vgg", "bert"]
     else:
         networks = [args.network]
     batch_sizes = [args.batch_size]
